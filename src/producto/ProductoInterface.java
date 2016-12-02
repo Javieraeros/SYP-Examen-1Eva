@@ -9,14 +9,25 @@ import retrofit2.http.Query;
 
 public interface ProductoInterface {
 
-	@GET("pF8JXVuUVrYQsg2WXtjT/")
+	/*@GET("pF8JXVuUVrYQsg2WXtjT/")
 	Call<Vector<Producto>> getProducto();
 
 	@GET("pF8JXVuUVrYQsg2WXtjT/")
 	Call<Vector<Producto>> getProductoPrecio (@Query("preciomin") double precio,@Query("preciomax") double preciomax);
 
 	@GET("pF8JXVuUVrYQsg2WXtjT/")
+	Call<Vector<Producto>> getProductoLetra(@Query("letra") char letra);*/
+	
+
+	@GET("producto")
 	Call<Vector<Producto>> getProductoLetra(@Query("letra") char letra);
+	
+	@GET("producto/")
+	Call<Vector<Producto>> getProducto();
+
+	@GET("producto")
+	Call<Vector<Producto>> getProductoPrecio (@Query("preciomin") double precio,@Query("preciomax") double preciomax);
+
 	
 
 	

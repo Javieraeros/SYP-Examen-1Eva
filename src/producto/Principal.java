@@ -32,7 +32,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class Principal {
 	
 	//Cambiar por el servidor donde quieres probar.
-	private final static String SERVER_URL = "http://putsreq.com/";
+	private final static String SERVER_URL = "http://examen.dev/";
 	
 
 	public static void main(String[] args) {
