@@ -31,12 +31,15 @@ public class ProductoCallBack implements Callback<Vector<Producto>>  {
 		message = resp.message();
 		isSuccesful = resp.isSuccessful();
 		
-		
-		System.out.println("Código             Nombre            Descripción               Precio");
-		for(int i=0;i<productos.size();i++){
-			System.out.println(productos.get(i).getCod()+"      "+productos.get(i).getNombre()+
-					"        "+productos.get(i).getDescripcion()+"     "+productos.get(i).getPrecio());
+		if(code==200){
+			System.out.println("Código             Nombre            Descripción               Precio");
+			for(int i=0;i<productos.size();i++){
+				System.out.println(productos.get(i).getCod()+"      "+productos.get(i).getNombre()+
+						"        "+productos.get(i).getDescripcion()+"     "+productos.get(i).getPrecio());
+			}
 		}
+		
+		
 		
 	}
     
